@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+    <title>FS Diyar Anmeldung</title>
+{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <title>Fs Diyar Theorie Anmeldung</title>
+</head>
+{% block content %}
+  <body>
+    <h1>Anmeldung  </h1>
+    <h4>{{errorHandling}}</h4>
+    <div class="row justify-content-center">
+        <form method="post" id="anmeldungsform">
+            <label for="name">Name:</label>
+            <input type="text" name="name">
+            <label for="vorname">Vorname:</label>
+            <input type="text" name="vorname">
+            <button class="btn btn-danger" type="submit">Anmelden</button>
+        </form>
+    </div>
+  </body>
+</html>
+{% endblock %}
