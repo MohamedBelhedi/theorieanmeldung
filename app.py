@@ -14,7 +14,7 @@ def connect_to_gsheets():
         "https://www.googleapis.com/auth/drive"
     ]
     try:
-        credentials = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
+        credentials = ServiceAccountCredentials.from_json_keyfile_name('./credentials.json', scope)
         client = gspread.authorize(credentials)
         spreadsheet_id = "12uNf1PXvRJeRIdJWEGiVYhROMyjC6tsfyFGRkzQ2v_4"
         sheet = client.open_by_key(spreadsheet_id).sheet1

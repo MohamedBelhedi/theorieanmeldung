@@ -1,0 +1,24 @@
+.container{
+    background: #f5f1e6;
+    background: radial-gradient(circle, rgba(245, 241, 230, 1) 19%, rgba(253, 187, 45, 1) 67%);
+}
+
+.img {
+    max-width:200px;
+}
+
+.error {
+    color: #dc3545;
+}
+
+.success {
+    color: #198754;
+}
+
+.form-container {
+ max-width: 500px; margin: 2rem auto;
+  }
+
+.form-group {
+margin-bottom: 1rem;
+}
